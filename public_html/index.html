@@ -12,8 +12,41 @@
       
       <title>Todo List</title>
       
-    </head>
+   
+    <style>
+body {
+    margin: 0;
+}
 
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 25%;
+    background-color: #009688;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+}
+
+li a {
+    display: block;
+    color: #0000ff;
+    padding: 8px 0 8px 16px;
+    text-decoration: none;
+}
+
+li a.active {
+    background-color: #ff0000;
+    color: teal;
+}
+
+li a:hover:not(.active) {
+    background-color: #ff0000;
+    color: teal;
+}
+</style>
+    </head>
     <body>
         
          <header>
