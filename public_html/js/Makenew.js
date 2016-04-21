@@ -9,7 +9,9 @@ $(function (){
     var APPLICATION_ID = "AB64A165-C094-E234-FF9E-30B087A58300",
         SECRET_KEY = "6B6B14B0-ED12-D8E2-FF56-4FF2177E4100",
         VERSION = "v1";
+        
         Backendless.initApp(APPLICATION_ID, SECRET_KEY, VERSION);
+       
   
    if(Backendless.UserService.isValidLogin()) {
        userLoggedIn(Backendless.LocalCache.get("current-user-id"));
