@@ -96,16 +96,16 @@ li a:hover:not(.active) {
       <script type="text/javascript" src="js/handlebars-v4.0.5.js"></script>
       
       <script class="right" id="blogs-template" type="text/x-handlebars-template">
-          {{#each posts}}
-          <div class="blog-post right">
-          <h2 class="blog-post-title right">{{title}}</h2>
-          <form action="demo_form.asp" method="get">
-  <input type="checkbox" name="post" value="post">
+          
+{{#each posts}}
+
+<div class="blog-post right">
+            <h2 class="blog-post-title right">{{title}}</h2>
             <p class="blog-post-meta right">At {{format created}} by {{authorEmail}}</p>
+            <button class="btn btn-large waves-effect waves-light check" type="submit" name="action">check</button>
             <div>{{{content}}}</div> 
-           <br>
+            </div>
            </form>
-           </div>
           {{/each}}
       </script>
     </body>
