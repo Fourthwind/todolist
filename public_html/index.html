@@ -97,11 +97,15 @@ li a:hover:not(.active) {
       
       <script class="right" id="blogs-template" type="text/x-handlebars-template">
           {{#each posts}}
-            <div class="blog-post right">
-            <h2 class="blog-post-title right">{{title}}</h2>
+          <div class="blog-post right">
+          <h2 class="blog-post-title right">{{title}}</h2>
+          <form action="demo_form.asp" method="get">
+  <input type="checkbox" name="post" value="post">
             <p class="blog-post-meta right">At {{format created}} by {{authorEmail}}</p>
             <div>{{{content}}}</div> 
-            </div>
+           <br>
+           </form>
+           </div>
           {{/each}}
       </script>
     </body>
