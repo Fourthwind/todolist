@@ -76,6 +76,7 @@ $(function (){
   });
 });
 
+
 function Posts(args) {
   args = args || {};
   this.title = args.title || "";
