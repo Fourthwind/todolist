@@ -40,6 +40,9 @@ function Posts(args){
     this.authorEmail =  args.authorEmail || "";
     
 }
+function checkers(){
+  document.getElementById("checked").style.color = 'black';
+}
 function check() { 
   document.getElementById("checked").style.color = 'white';
 }
