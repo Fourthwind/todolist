@@ -91,6 +91,7 @@ li a:hover:not(.active) {
       <script type="text/javascript" src="js/materialize.min.js"></script>
       <script type="text/javascript" src="libs/backendless.js"></script>
       <script type="text/javascript" src="js/list.js"></script>
+      <script type="text/javascript" src="js/Makenew.js"></script>
       <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.12.0/moment.min.js
 "></script>
       <script type="text/javascript" src="js/handlebars-v4.0.5.js"></script>
@@ -126,7 +127,21 @@ li a:hover:not(.active) {
       
     
    </script>
-   
+   <script class="right" id="newstuff-template" type="text/x-handlebars-template">
+          
+{{#each posts}}
+
+<div class="blog-post right" id="checked">
+            <button class="btn btn-large waves-effect waves-light" onclick="checkers()" type="submit" name="action">check</button>
+            <h2 class="blog-post-title right">{{title}}</h2>
+            <p class="blog-post-meta right">At {{format created}} by {{authorEmail}}</p>
+            <button class="btn btn-large waves-effect waves-light" onclick="check()" type="submit" name="action">check</button>
+            <div>{{{content}}}</div>
+            <p>Uncomplete<p>
+            </div>
+           </form>
+          {{/each}}
+      </script>
    </body>
   </html>
   
