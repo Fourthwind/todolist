@@ -101,10 +101,16 @@ li a:hover:not(.active) {
 {{#each posts}}
 
 <div class="blog-post right" id="checked">
-            <button class="btn btn-large waves-effect waves-light" onclick="checkers()" type="submit" name="action">check</button>
+            <div class="col s12 m2">
+                            <p class="z-depth-5"</p>
+            <button class="btn btn-large waves-effect waves-light z-depth-5" onclick="checkers()" type="submit" name="action">check</button>
+                      </div>
             <h2 class="blog-post-title right">{{title}}</h2>
             <p class="blog-post-meta right">At {{format created}} by {{authorEmail}}</p>
-            <button class="btn btn-large waves-effect waves-light" onclick="check()" type="submit" name="action">check</button>
+            <div class="col s12 m2">
+                            <p class="z-depth-5"</p>
+            <button class="btn btn-large waves-effect waves-light z-depth-5" onclick="check()" type="submit" name="action">check</button>
+    </div>
             <div>{{{content}}}</div>
             <p>Uncomplete<p>
             </div>
