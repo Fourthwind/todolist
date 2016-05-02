@@ -13,39 +13,7 @@
       <title>Todo List</title>
       
    
-    <style>
-body {
-    margin: 0;
-}
-
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    width: 25%;
-    background-color: #009688;
-    position: fixed;
-    height: 100%;
-    overflow: auto;
-}
-
-li a {
-    display: block;
-    color: #e57373;
-    padding: 8px 0 8px 16px;
-    text-decoration: none;
-}
-
-li a.active {
-    background-color: #e57373;
-    color: lime;
-}
-
-li a:hover:not(.active) {
-    background-color: #e57373;
-    color: lime;
-}
-</style>
+    
     </head>
     <body>
         
@@ -102,6 +70,8 @@ li a:hover:not(.active) {
 
 <div class="blog-post right" id="checked">
             <div class="col s12 m2">
+            <i class="material-icons check right">done></i>
+            <i class="material-icons  deleteA right" type="submit" name="action" data={{objectId}}>delete<i>
                             <p class="z-depth-5"</p>
             <button class="btn btn-large waves-effect waves-light z-depth-5" onclick="checkers()" type="submit" name="action">check</button>
                       </div>
