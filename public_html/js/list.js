@@ -48,7 +48,7 @@ function check() {
 }
 $(document).on('click', '.deleteA',function (event){
   Backendless.Persistence.of(Posts).remove(event.target.attributes.data.nodeValue);
-  Materialize.toast('Deleted!', 2000)
+  Materialize.toast('Deleted!', 2000);
   
   
 });

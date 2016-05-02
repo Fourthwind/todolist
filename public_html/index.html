@@ -69,7 +69,7 @@
 {{#each posts}}
 
 <div class="blog-post right" id="checked">
-            <div class="col s12 m2">
+            <div class="col s12 m2 chip">
             <i class="material-icons check right">done></i>
             <i class="material-icons  deleteA right" type="submit" name="action" data={{objectId}}>delete<i>
                             <p class="z-depth-5"</p>
@@ -77,7 +77,7 @@
                       </div>
             <h2 class="blog-post-title right">{{title}}</h2>
             <p class="blog-post-meta right">At {{format created}} by {{authorEmail}}</p>
-            <div class="col s12 m2">
+            <div class="col s12 m2 chip">
                             <p class="z-depth-5"</p>
             <button class="btn btn-large waves-effect waves-light z-depth-5" onclick="check()" type="submit" name="action">check</button>
     </div>
