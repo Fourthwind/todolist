@@ -23,7 +23,7 @@
                     <a href="#" class="brand-logo">Todo List</a>
                     <ul class="right hide-on-med-and-down" id="nav-mobile">
                     <li class="purple darken-4"><a href="">list</a></li>
-                    <li class="purple darken-4" ><a href="">list <span class="new badge">300000</span></a></li>
+                    <li class="purple darken-4" ><a href="">list <span class="new badge">over 9000!!!!</span></a></li>
                     <li class="purple darken-4"><a href="">list</a></li>
                     <li class="purple darken-4"><a href="index.html">LIST</a></li>
                     <li class="purple darken-4"><a href="makenew.html">Make New</a></li>
@@ -64,27 +64,22 @@
 "></script>
       <script type="text/javascript" src="js/handlebars-v4.0.5.js"></script>
       
-      <script class="right" id="blogs-template" type="text/x-handlebars-template">
+      <script class="center-align" id="blogs-template" type="text/x-handlebars-template">
           
 {{#each posts}}
 
-<div class="blog-post right" id="checked">
-            <div class="col s12 m2 chip">
+            <div class="blog-post">
+            <div class="chip">
             <i class="material-icons check right">done></i>
-            <i class="material-icons  deleteA right" type="submit" name="action" data={{objectId}}>delete<i>
-                            <p class="z-depth-5"</p>
-            <button class="btn btn-large waves-effect waves-light z-depth-5" onclick="checkers()" type="submit" name="action">check</button>
-                      </div>
-            <h2 class="blog-post-title right">{{title}}</h2>
-            <p class="blog-post-meta right">At {{format created}} by {{authorEmail}}</p>
-            <div class="col s12 m2 chip">
-                            <p class="z-depth-5"</p>
-            <button class="btn btn-large waves-effect waves-light z-depth-5" onclick="check()" type="submit" name="action">check</button>
-    </div>
+            <i class="material-icons  deleteA" type="submit" name="action" data={{objectId}}>delete<i>
+                           
+                      
+            <h2 class="blog-post-title">{{title}}</h2>
+            <p class="blog-post-meta">At {{format created}} by {{authorEmail}}</p>
             <div>{{{content}}}</div>
-            <p>Uncomplete<p>
-            </div>
-           </form>
+                           
+   </div>
+   </div>
           {{/each}}
       </script>
     </body>
