@@ -1,0 +1,36 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Apr 19, 2016, 8:51:59 AM
+    Author     : Student
+*/
+   
+
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+main{
+    flex: 1 0 auto;
+}
+
+.blog-post{
+    margin-bottom: 60px; 
+        
+}
+
+.blog-post-title{
+    margin-botton: 5px;
+    font-size: 40px;
+}
+
+.blog-post-meta{
+    margin-bottom: 20px;
+    color: #999;
+    font-style: italic;
+}
+

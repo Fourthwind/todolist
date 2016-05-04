@@ -1,0 +1,153 @@
+ <html>
+    <head>
+      <!--Import Google Icon Font-->
+      <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+      <link type="text/css" rel="stylesheet" href="css/home.css">
+      <link rel="icon" href="data:;base64,iVBORwOKGgo=">
+
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      
+      <title>Todo List</title>
+      
+   
+    <style>
+body {
+    margin: 0;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 25%;
+    background-color: #009688;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+}
+
+li a {
+    display: block;
+    color: #e57373;
+    padding: 8px 0 8px 16px;
+    text-decoration: none;
+}
+
+li a.active {
+    background-color: #e57373;
+    color: lime;
+}
+
+li a:hover:not(.active) {
+    background-color: #e57373;
+    color: lime;
+}
+</style>
+    </head>
+    <body>
+        
+         <header>
+            
+         </header>
+          <main>
+              <div class="container">
+                  <div class="row">
+                      <h1 class="center-align">Todo List</h1>
+                      <h6 class="center-align">by Sean Miller</h6>
+                  </div>
+                  <div class="row">
+                      <div class="col s12 main-container"></div>
+                  </div>
+              </div>
+              <div id="HCB_comment_box"><a href="http://www.htmlcommentbox.com">Public List</a> is loading comments...</div>
+ <link rel="stylesheet" type="text/css" href="http://www.htmlcommentbox.com/static/skins/default/skin.css" />
+ <script type="text/javascript" language="javascript" id="hcb"> /*<!--*/ if(!window.hcb_user){hcb_user={  };} (function(){s=document.createElement("script");s.setAttribute("type","text/javascript");s.setAttribute("src", "http://www.htmlcommentbox.com/jread?page="+escape((window.hcb_user && hcb_user.PAGE)||(""+window.location)).replace("+","%2B")+"&opts=470&num=10");if (typeof s!="undefined") document.getElementsByTagName("head")[0].appendChild(s);})(); /*-->*/ </script>
+<!-- end htmlcommentbox.com -->
+          </main>
+        <footer class="page-footer purple darken-4">
+            <div class="container">
+                
+                <div class="nav-wrapper">
+                    <a href="#" class="brand-logo">Todo List</a>
+                    <ul class="right hide-on-med-and-down" id="nav-mobile">
+                    <li class="purple darken-4"><a href="index.html">LIST</a></li>
+                    <li class="purple darken-4"><a href="makenew.html">Make New</a></li>
+                  
+                    </ul>
+                    <p>Hi</p>
+                </div>
+                <p>Sean tech</p>
+                <p><a href="#">Back to the top</a></p>
+            </div>
+            <div class="footer-copyright">
+                <div class="container">
+                    @2016 Sean
+                </div>
+            </div>
+        </footer>
+      <!--Import jQuery before materialize.js-->
+      <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+      <script type="text/javascript" src="js/materialize.min.js"></script>
+      <script type="text/javascript" src="libs/backendless.js"></script>
+      <script type="text/javascript" src="js/list.js"></script>
+      <script type="text/javascript" src="js/Makenew.js"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.12.0/moment.min.js
+"></script>
+      <script type="text/javascript" src="js/handlebars-v4.0.5.js"></script>
+      
+      <script id="add-blog-template" type="text/x-handlebars-template">
+                  <h2>Add a new Blog</h2>
+      <div class="row">
+          <form class="col s12 form-add-blog">
+              <div class="row">
+                  <div class="input-field col s12">
+                      <input id="title" type="text" name="title">
+                      <label for="title">Add Title</label>
+                  </div>
+              </div>
+              <div class="row">
+              <h3>Add Statement</h3>
+                  <div class="input-field col s12">
+                      <textarea id="content" name="content" id="materialize-textarea"></textarea>
+                      <label for="content"></label>
+                  </div>
+              </div>
+              <div class="row">
+                  <div class="col s12">
+                      <p class="right-align">
+                         <button class="btn btn-large waves-effect waves-light" type="submit" name="action">Submit</button> 
+                      </p>
+                  </div>
+                  </div>
+               </form>
+              </div>
+          
+
+      
+    
+   </script>
+   <script class="right" id="newstuff-template" type="text/x-handlebars-template">
+          
+{{#each posts}}
+
+<div class="blog-post right" id="checked">
+            <button class="btn btn-large waves-effect waves-light" onclick="checkers()" type="submit" name="action">check</button>
+            <h2 class="blog-post-title right">{{title}}</h2>
+            <p class="blog-post-meta right">At {{format created}} by {{authorEmail}}</p>
+            <button class="btn btn-large waves-effect waves-light" onclick="check()" type="submit" name="action">check</button>
+            <div>{{{content}}}</div>
+            <p>Uncomplete<p>
+            </div>
+           </form>
+          {{/each}}
+      </script>
+   </body>
+  </html>
+  
+  
+  
+  
+  
